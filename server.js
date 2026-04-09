@@ -8,7 +8,11 @@ const Patient = require('./Patient');
 const app = express();
 
 // MIDDLEWARE: "I will call in my colleagues"
-app.use(cors()); 
+app.use(cors({
+    origin: "https://hippocratic-patient-twin.vercel.app",
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 app.use(express.json());
 
 // INITIALIZE: "I will fulfill according to my ability and judgment"
