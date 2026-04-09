@@ -4,8 +4,12 @@
   "description": "A system dedicated to the holistic care of the sick.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  },
+  "start": "node server.js",
+  "client": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "dependencies": {
     "axios": "^1.14.0",
     "cors": "^2.8.5",
