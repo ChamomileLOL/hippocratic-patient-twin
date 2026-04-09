@@ -10,8 +10,8 @@ function App() {
 
   const handleInitiateTreatment = async () => {
     try {
-      // Ensure the port matches the Backend (5000)
-      const response = await axios.post('http://localhost:5000/holistic-treatment', {
+      // The Interface Re-Alignment (Frontend on Vercel)
+      const response = await axios.post('https://hippocratic-patient-twin.onrender.com/holistic-treatment', {
         name: patientData.name,
         patientId: patientData.id,
         familySupportStatus: patientData.familySupport,
